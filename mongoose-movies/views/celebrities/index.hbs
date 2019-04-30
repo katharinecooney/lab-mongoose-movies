@@ -1,7 +1,7 @@
 <h2>Celebrities</h2>
 {{#each allCelebritiesFromDB}}
-  <p>{{this.name}}</p>
-  <a href={{}}></a>
+  <p><a href="/celebrities/{{this.id}}">{{this.name}}</a></p>
 {{/each}}
 
 <a href="/celebrities">Home</a>
+<a href="celebrities/new">Add New Celeb</a>

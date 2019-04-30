@@ -1,6 +1,8 @@
 <h2>Details</h2>
-{{celeb.name}}
+{{#each celeb}}
+  {{this.name}}
 
-{{celeb.occupation}}
+  {{this.occupation}}
 
-{{celeb.catchPhrase}}
+  <p> {{this.catchPhrase}} </p>
+{{/each}}
